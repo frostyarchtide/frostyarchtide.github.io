@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Archtide</title>
+        <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
         <style>
             body {
                 margin: 0px;
@@ -14,12 +15,22 @@
                 top: 50%;
                 left: 50%;
                 transform: translateX(-50%) translateY(-50%);
+                display: flex;
+            }
+
+            .blink {
+                animation: blink 1s step-end infinite;
+            }
+
+            @keyframes blink {
+                50% {opacity: 0%}
             }
         </style>
     </head>
     <body>
         <div class = "center">
-            <p style = "color: #ffffff; font-family: Consolas; font-size: xxx-large">FrostyArchtide</p>
+            <p style = "color: #ffffff; font-family: 'JetBrains Mono'; font-size: xxx-large">frosty@archtide:~$&nbsp</p>
+            <p class = "blink" style = "color: #ffffff; font-family: 'JetBrains Mono'; font-size: xxx-large">_</p>
         </div>
     </body>
 </html>
