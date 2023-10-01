@@ -2,35 +2,13 @@
 <html>
     <head>
         <title>Archtide</title>
-        <link href = "https://fonts.googleapis.com/css?family=JetBrains Mono" rel = "stylesheet">
-        <style>
-            body {
-                margin: 0px;
-                padding: 0px;
-                background-color: #000000;
-            }
-
-            .center {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translateX(-50%) translateY(-50%);
-                display: flex;
-            }
-
-            .blink {
-                animation: blink 1s step-end infinite;
-            }
-
-            @keyframes blink {
-                50% {opacity: 0%}
-            }
-        </style>
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=JetBrains Mono">
+        <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
-        <div class = "center">
-            <p style = "color: #ffffff; font-family: 'JetBrains Mono'; font-size: xxx-large">frosty@archtide:~$&nbsp</p>
-            <p class = "blink" style = "color: #ffffff; font-family: 'JetBrains Mono'; font-size: xxx-large">_</p>
+        <div class = "container">
+            <p>frosty@archtide:~$&nbsp</p>
+            <p class = "blink">_</p>
         </div>
     </body>
 </html>
