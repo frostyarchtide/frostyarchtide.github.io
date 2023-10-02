@@ -11,7 +11,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #000000;
+    background-image: url(https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F5r0vb9vesxea1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     color: #ffffff;
 }
 
