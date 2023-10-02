@@ -1,1 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
+body {
+    background-image: url(https://i.redd.it/5r0vb9vesxea1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p {
+    color: #ffffff;
+    -webkit-text-stroke: 3px #000000;
+    font-family: 'Comic Sans MS';
+    font-size: 64px;
+}
