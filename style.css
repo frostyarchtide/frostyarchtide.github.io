@@ -5,16 +5,19 @@
     font-family: 'JetBrains Mono';
 }
 
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS21wSjibsw_YX0rYRZsre7_SM8W4N6rzp3WTQccZkO80UX2oh4zvKK&usqp=CAE&s);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS21wSjibsw_YX0rYRZsre7_SM8W4N6rzp3WTQccZkO80UX2oh4zvKK&usqp=CAE&s);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
     color: #ffffff;
 }
 
