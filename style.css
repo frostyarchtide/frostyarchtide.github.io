@@ -4,10 +4,7 @@
 }
 
 body {
-    background-image: url(https://i.redd.it/5r0vb9vesxea1.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+    background: #000000;
 }
 
 .container {
@@ -20,7 +17,14 @@ body {
 
 .container p {
     color: #ffffff;
-    -webkit-text-stroke: 3px #000000;
-    font-family: 'Comic Sans MS';
+    font-family: 'JetBrains Mono';
     font-size: 64px;
+}
+
+.blink {
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    50% {opacity: 0%};
 }
