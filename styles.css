@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #000000;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p {
+    color: #ffffff;
+    font-family: 'JetBrains Mono';
+    font-size: 32px;
+}
+
+.container a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blink {
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    50% {opacity: 0%};
+}
