@@ -1,0 +1,46 @@
+name: Deploy Wasm to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  pages: write
+
+jobs:
+  build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pull from Codeberg Repository
+        run: git clone 'https://codeberg.org/frostyarchtide/orbital' 'repository'
+
+      - name: Add Rust Wasm Target
+        run: rustup target add wasm32-unknown-unknown
+
+      - name: Build Rust
+        run: |
+          cd './orbital'
+          cargo build --target=wasm32-unknown-unknown --release
+          cd './..'
+
+      - name: Setup Artifact
+        run: |
+          cp './repository/index.html' './artifact/'
+          cp './repository/mq_js_bundle.js' './artifact/'
+          cp './repository/target/wasm32-unknown-unknown/release/*.wasm' './artifact/'
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './artifact'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
