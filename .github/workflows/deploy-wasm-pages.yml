@@ -29,6 +29,7 @@ jobs:
 
       - name: Setup Artifact
         run: |
+          mkdir './artifact'
           cp './repository/index.html' './artifact/'
           cp './repository/mq_js_bundle.js' './artifact/'
           cp './repository/target/wasm32-unknown-unknown/release/*.wasm' './artifact/'
