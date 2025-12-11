@@ -32,7 +32,7 @@ jobs:
           mkdir './artifact'
           cp './repository/index.html' './artifact/'
           cp './repository/mq_js_bundle.js' './artifact/'
-          ls -lR './repository/target'
+          ls -l './repository/target/wasm32-unknown-unknown/release/'
           cp "./repository/target/wasm32-unknown-unknown/release/*.wasm" './artifact/'
 
       - name: Configure Pages
