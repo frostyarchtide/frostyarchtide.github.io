@@ -23,7 +23,7 @@ jobs:
 
       - name: Build Rust
         run: |
-          cd './orbital'
+          cd './repository'
           cargo build --target=wasm32-unknown-unknown --release
           cd './..'
 
